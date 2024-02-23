@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musik</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        Music CDs
+    </header>
+    <main>
+        <form id="cdForm">
+            <fieldset> 
+                <div>
+                    <label for="txtName">Author</label>
+                    <input type="text" id="txtname" name="formAuthor" > 
+                </div>
+                <div>
+                    <label for="txtTitle">Title</label>
+                    <input type="text" id="txttitle" name="formTitle" >
+                </div>
+                <div>
+                    <label class="la_year" for="txtYear">Year</label>
+                    <input class="in_year" type="date" id="txtyear" name="formYear" >
+                </div>
+            </fieldset>
+            <button type="button" class="btn" onclick="addCD()">CD</button>
+        </form>
+        
+        <table id="cdTable">
+            <thead>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Action</th>
+            </thead>
+            <tbody>
+                <!-- CD entries shows up here -->
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
